@@ -519,19 +519,6 @@ register_nodes() {
   done
 }
 
-confirm() {
-    # call with a prompt string or use a default
-    read -r -p "${1:-Are you sure? [y/N]} " response
-    case $response in
-        [yY][eE][sS]|[yY]) 
-            true
-            ;;
-        *)
-            false
-            ;;
-    esac
-}
-
 ask_yes_or_no() {
     read -p "$1 ([y]es or [N]o): "
     case $(echo $REPLY | tr '[A-Z]' '[a-z]') in
