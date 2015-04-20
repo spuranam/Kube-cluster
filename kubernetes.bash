@@ -609,7 +609,7 @@ storage:
         rootdirectory: ${DOCKER_REGISTRY_CONTAINER_VOLUME}
 http:
     addr: :5000
-    secret: Iwork@fordIAmInnovatingin2015
+    secret: MyDeepSuperS@@ret2015
     debug:
         addr: localhost:5001
     tls:
